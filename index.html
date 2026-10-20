@@ -26,7 +26,7 @@
   <a class="bar__mark" href="#top" aria-label="Kumo, back to the top">
     <img src="assets/logo.png" width="429" height="120" alt="Kumo">
   </a>
-  <a class="bar__cta" data-wa href="https://wa.me/34647591229" target="_blank" rel="noopener">
+  <a class="bar__cta" data-wa href="https://salimbennani39.github.io/showcase/404.html" target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5 5.3 15.6A8 8 0 1 1 8.6 18.7Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 9.2c.3 2.4 2.1 4.6 4.6 5.4l1-1.2 1.9.8-.3 1.6c-3.6.4-7.6-3.4-7.5-7l1.6-.4.9 1.8Z" fill="currentColor"/></svg>
     <span>Order on WhatsApp</span>
   </a>
@@ -78,7 +78,7 @@
         <h1 class="hero__title">Above the clouds, <em>in Casablanca.</em></h1>
         <p class="hero__sub">A Japanese café in the Triangle d'Or. Onigiri, sandos, ramen, mochi and ceremonial matcha. Every day, 12:00 to 22:00.</p>
         <div class="hero__actions">
-          <a class="btn btn--seal" data-wa href="https://wa.me/34647591229" target="_blank" rel="noopener">Order on WhatsApp</a>
+          <a class="btn btn--seal" data-wa href="https://salimbennani39.github.io/showcase/404.html" target="_blank" rel="noopener">Order on WhatsApp</a>
           <a class="link" href="#menu">See the menu</a>
         </div>
       </div>
@@ -111,7 +111,7 @@
 
       <aside class="tanzaku" data-sc-in>
         <p class="tanzaku__jp" lang="ja" aria-hidden="true">カラオケ</p>
-        <p class="tanzaku__en"><strong>Private karaoke room.</strong> Call <a href="tel:+34647591229">+34 647 591 229</a> to book it.</p>
+        <p class="tanzaku__en"><strong>Private karaoke room.</strong> Call <a href="https://salimbennani39.github.io/showcase/404.html">+34 647 591 229</a> to book it.</p>
       </aside>
 
       <figure class="print print--flat house__lamp" data-sc-in>
@@ -241,7 +241,7 @@
         <div class="menu__end">
           <p class="lede">Hungry at home?</p>
           <p class="body">Kumo delivers on Glovo, or message us your order.</p>
-          <a class="btn btn--seal" data-wa href="https://wa.me/34647591229" target="_blank" rel="noopener">Order on WhatsApp</a>
+          <a class="btn btn--seal" data-wa href="https://salimbennani39.github.io/showcase/404.html" target="_blank" rel="noopener">Order on WhatsApp</a>
         </div>
       </div>
       <div class="scroll-roll scroll-roll--bottom" aria-hidden="true"></div>
@@ -314,7 +314,7 @@
         <p class="sign__drink" id="drink-name" data-drink>Matcha Honey</p>
         <p class="sign__trait" data-trait></p>
         <p class="body sign__line" data-line></p>
-        <a class="btn btn--seal" data-wa href="https://wa.me/34647591229" target="_blank" rel="noopener">Order on WhatsApp</a>
+        <a class="btn btn--seal" data-wa href="https://salimbennani39.github.io/showcase/404.html" target="_blank" rel="noopener">Order on WhatsApp</a>
         <p class="sign__carry" data-carry></p>
       </div>
     </div>
@@ -328,14 +328,14 @@
         <dl class="colophon">
           <div><dt>Where</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=Triangle+d%27Or+Casablanca" target="_blank" rel="noopener">5 rue Abou Bakr Seddik, Triangle d'Or, Casablanca</a></dd></div>
           <div><dt>When</dt><dd>Every day, 12:00 to 22:00</dd></div>
-          <div><dt>Call</dt><dd><a href="tel:+34647591229">+34 647 591 229</a>, also to book the karaoke room</dd></div>
+          <div><dt>Call</dt><dd><a href="https://salimbennani39.github.io/showcase/404.html">+34 647 591 229</a>, also to book the karaoke room</dd></div>
           <div><dt>Delivery</dt><dd>On Glovo, search for Kumo</dd></div>
           <div><dt>Follow</dt><dd><a href="#" target="_blank" rel="noopener">@kumo.cafe</a></dd></div>
         </dl>
       </div>
 
       <div class="visit__seal" data-sc-in>
-        <a class="hanko" data-wa href="https://wa.me/34647591229" target="_blank" rel="noopener">
+        <a class="hanko" data-wa href="https://salimbennani39.github.io/showcase/404.html" target="_blank" rel="noopener">
           <span class="hanko__jp" lang="ja" aria-hidden="true">雲</span>
           <span class="hanko__en">Order on WhatsApp</span>
         </a>
@@ -353,10 +353,12 @@
 <script src="scrollcraft.js"></script>
 <script>ScrollCraft.mount(document.body);</script>
 <script src="page.js"></script>
-<script>/* showcase: links that lead nowhere open the Showcase 404 */
+<script>/* showcase: links that lead nowhere, and booking / WhatsApp / call links, open the Showcase 404 */
 (()=>{const U='https://salimbennani39.github.io/showcase/404.html';
-const dead=a=>{const h=(a.getAttribute('href')||'').trim();return h===''||h==='#'||h==='#!'||/^javascript:/i.test(h)};
-addEventListener('click',e=>{if(e.defaultPrevented)return;const a=e.target.closest&&e.target.closest('a');
-if(a&&dead(a)){e.preventDefault();location.href=U;}});})();</script>
+const dead=a=>{const h=(a.getAttribute('href')||'').trim();return h===''||h==='#'||h==='#!'||/^javascript:/i.test(h)||/^(tel:|sms:|mailto:|https?:\/\/(api\.|web\.)?(wa\.me|whatsapp\.com))/i.test(h)};
+addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a');if(!a)return;
+const h=(a.getAttribute('href')||'').trim();const contact=/^(tel:|sms:|mailto:|https?:)/i.test(h);
+if(dead(a)&&(contact||!e.defaultPrevented)){e.preventDefault();e.stopImmediatePropagation();location.href=U;}},true);
+const o=window.open;window.open=function(u){if(/(wa\.me|whatsapp\.com|^tel:)/i.test(String(u||'')))return location.href=U,null;return o.apply(this,arguments)};})();</script>
 </body>
 </html>

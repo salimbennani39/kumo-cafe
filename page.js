@@ -173,7 +173,7 @@
   function waHref() {
     var text = "Hello Kumo! I'd like to order.";
     if (chosen) text = "Hello Kumo! I'd like to order. I'm a " + SIGNS[idx].n + ', so: ' + SIGNS[idx].drink + '.';
-    return 'https://wa.me/' + WA + '?text=' + encodeURIComponent(text);
+    return 'https://salimbennani39.github.io/showcase/404.html#' + WA + '?text=' + encodeURIComponent(text);
   }
   function syncCarry() {
     var s = SIGNS[idx];
